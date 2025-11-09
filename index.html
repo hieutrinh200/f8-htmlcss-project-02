@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Lesson – Online Learning Platform</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Learn UI/UX design, development, and marketing with Lesson. Access online courses, build skills, and boost your career."
+    />
+    <link
+      rel="canonical"
+      href="https://hieutrinh200.github.io/f8-htmlcss-project-02/"
+    />
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:title"
+      content="Lesson – Online Learning Platform"
+    />
+    <meta
+      property="og:description"
+      content="Learn UI/UX design, development, and marketing with Lesson. Access online courses, build skills, and boost your career."
+    />
+    <meta
+      property="og:url"
+      content="https://hieutrinh200.github.io/f8-htmlcss-project-02/"
+    />
+    <meta
+      property="og:image"
+      content="https://hieutrinh200.github.io/f8-htmlcss-project-02/assets/images/og-image.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="Lesson – Online Learning Platform"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn UI/UX design, development, and marketing with Lesson. Access online courses, build skills, and boost your career."
+    />
+    <meta
+      name="twitter:image"
+      content="https://hieutrinh200.github.io/f8-htmlcss-project-02/assets/images/og-image.jpg"
+    />
+
+    <!-- Theme color -->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="assets/favicons/site.webmanifest"
+    />
+
+    <!-- Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sen:wght@700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sen:wght@700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/main.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header site-header--fixed">
+      <div class="container">
+        <div class="site-header__inner">
+          <!-- Logo -->
+          <a
+            href="#"
+            class="site-header__logo"
+          >
+            <img
+              src="assets/icons/logo.svg"
+              alt="Lesson logo"
+              class="site-header__logo-icon"
+              width="120"
+              height="40"
+              decoding="async"
+            />
+          </a>
+          <!-- Navigation -->
+          <nav
+            class="site-header__nav"
+            role="navigation"
+            aria-label="Main navigation"
+          >
+            <ul class="site-header__nav-list">
+              <li class="site-header__nav-item site-header__nav-item--active">
+                <a
+                  href="#"
+                  class="site-header__nav-link"
+                  data-text="Home"
+                  >Home</a
+                >
+              </li>
+              <li class="site-header__nav-item">
+                <a
+                  href="#courses"
+                  class="site-header__nav-link"
+                  data-text="Courses"
+                  >Courses</a
+                >
+              </li>
+              <li class="site-header__nav-item">
+                <a
+                  href="#courses"
+                  class="site-header__nav-link"
+                  data-text="Pricing"
+                  >Pricing</a
+                >
+              </li>
+              <li class="site-header__nav-item">
+                <a
+                  href="#reviews"
+                  class="site-header__nav-link"
+                  data-text="Reviews"
+                  >Reviews</a
+                >
+              </li>
+            </ul>
+
+            <!-- Action -->
+            <div class="site-header__action">
+              <a
+                href="#signup"
+                class="btn site-header__action-btn"
+                >Sign Up</a
+              >
+            </div>
+          </nav>
+
+          <!-- Mobile Menu Toggle -->
+          <label
+            for="menu-checkbox"
+            class="site-header__toggle"
+            aria-label="Toggle menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+            >
+              <path
+                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+                fill="currentColor"
+              />
+            </svg>
+          </label>
+
+          <!-- Mobile Drawer -->
+          <input
+            type="checkbox"
+            id="menu-checkbox"
+            class="site-header__checkbox"
+            hidden
+          />
+          <div
+            class="site-header__drawer"
+            role="dialog"
+            aria-label="Mobile menu"
+          >
+            <ul class="site-header__nav-list">
+              <li class="site-header__nav-item site-header__nav-item--active">
+                <a
+                  href="#"
+                  class="site-header__nav-link"
+                  data-text="Home"
+                  >Home</a
+                >
+              </li>
+              <li class="site-header__nav-item">
+                <a
+                  href="#courses"
+                  class="site-header__nav-link"
+                  data-text="Courses"
+                  >Courses</a
+                >
+              </li>
+              <li class="site-header__nav-item">
+                <a
+                  href="#courses"
+                  class="site-header__nav-link"
+                  data-text="Pricing"
+                  >Pricing</a
+                >
+              </li>
+              <li class="site-header__nav-item">
+                <a
+                  href="#reviews"
+                  class="site-header__nav-link"
+                  data-text="Reviews"
+                  >Reviews</a
+                >
+              </li>
+            </ul>
+            <div class="site-header__nav-actions">
+              <a
+                href="#!"
+                class="btn btn--secondary site-header__nav-action site-header__nav-btn"
+                >Sign in</a
+              >
+              <a
+                href="#!"
+                class="btn site-header__nav-action site-header__nav-btn"
+                >Sign up</a
+              >
+            </div>
+          </div>
+          <label
+            for="menu-checkbox"
+            class="site-header__overlay"
+            aria-hidden="true"
+          ></label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section
+        class="hero"
+        id="home"
+      >
+        <div class="container">
+          <div class="hero__wrapper">
+            <!-- Hero Media -->
+            <div class="hero__media">
+              <img
+                src="assets/images/hero.jpg"
+                alt="Learn without limits"
+                class="hero__image"
+                width="470"
+                height="685"
+                decoding="async"
+              />
+              <div class="hero__summary">
+                <div class="hero__summary-item">
+                  <div
+                    class="hero__summary-icon-wrap"
+                    style="--summary-icon-bg: #fff9e8"
+                  >
+                    <img
+                      src="assets/icons/list.svg"
+                      alt="UI/UX Design courses"
+                      width="32"
+                      height="32"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="hero__summary-details">
+                    <p class="hero__summary-label">20 Courses</p>
+                    <p class="hero__summary-title">UI/UX Design</p>
+                  </div>
+                </div>
+                <div class="hero__summary-item">
+                  <div
+                    class="hero__summary-icon-wrap"
+                    style="--summary-icon-bg: #fcefff"
+                  >
+                    <img
+                      src="assets/icons/code.svg"
+                      alt="Development courses"
+                      width="32"
+                      height="32"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="hero__summary-details">
+                    <p class="hero__summary-label">20 Courses</p>
+                    <p class="hero__summary-title">Development</p>
+                  </div>
+                </div>
+                <div class="hero__summary-item">
+                  <div
+                    class="hero__summary-icon-wrap"
+                    style="--summary-icon-bg: #ebeaff"
+                  >
+                    <img
+                      src="assets/icons/speaker.svg"
+                      alt="Marketing courses"
+                      width="32"
+                      height="32"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="hero__summary-details">
+                    <p class="hero__summary-label">30 Courses</p>
+                    <p class="hero__summary-title">Marketing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="hero__content">
+              <h1 class="hero__heading">Learn without limits and spread knowledge</h1>
+              <p class="hero__description">
+                Build new skills for that “this is my year” feeling with courses, certificates, and degrees from
+                world-class universities and companies.
+              </p>
+              <div class="hero__cta-group">
+                <a
+                  href="#courses"
+                  class="btn btn--secondary hero__cta-btn"
+                  >See Courses</a
+                >
+                <button class="hero__watch-btn">
+                  <div class="hero__watch-icon-wrap">
+                    <img
+                      src="assets/icons/play.svg"
+                      alt="Play video"
+                      width="12"
+                      height="12"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <span class="hero__watch-label">Watch Video</span>
+                </button>
+              </div>
+              <p class="hero__stats-label">Recent engagement</p>
+              <div class="hero__stats">
+                <span class="hero__stat">
+                  <strong class="hero__stat-value">50K</strong>
+                  <span class="hero__stat-text">Students</span>
+                </span>
+                <span class="hero__stat">
+                  <strong class="hero__stat-value">70+</strong>
+                  <span class="hero__stat-text">Courses</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Courses Section -->
+      <section
+        id="courses"
+        class="popular"
+      >
+        <div class="container">
+          <div class="popular__content">
+            <div class="popular__intro">
+              <h2 class="popular__title">Our popular courses</h2>
+              <p class="popular__description">
+                Build new skills with new trendy courses and shine for the next future career.
+              </p>
+            </div>
+            <div class="popular__controls">
+              <button
+                class="popular__control popular__control--prev"
+                aria-label="Previous courses"
+              >
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                >
+                  <path
+                    d="M7 1L1 7L7 13"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                class="popular__control popular__control--next"
+                aria-label="Next courses"
+              >
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L7 7L1 13"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="popular__list">
+            <!-- Course Cards -->
+            <article class="course-card">
+              <a
+                href="#course1"
+                class="course-card__link"
+              >
+                <img
+                  class="course-card__thumb"
+                  src="assets/images/course-01.jpg"
+                  alt="Basic web design course"
+                  width="370"
+                  height="278"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="course-card__details">
+                <div class="course-card__header">
+                  <h3 class="course-card__title"><a href="#course1">Basic web design</a></h3>
+                  <div class="course-card__rating">
+                    <img
+                      src="assets/icons/star.svg"
+                      alt="Rating star"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="course-card__rating-score">4.5</span>
+                  </div>
+                </div>
+                <p class="course-card__description">
+                  Get the best course, gain knowledge and shine for your future career.
+                </p>
+                <div class="course-card__footer">
+                  <span class="course-card__price">$120.75</span>
+                  <button class="btn btn--secondary course-card__btn">Book Now</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card">
+              <a
+                href="#course2"
+                class="course-card__link"
+              >
+                <img
+                  class="course-card__thumb"
+                  src="assets/images/course-02.jpg"
+                  alt="UI/UX design course"
+                  width="370"
+                  height="278"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="course-card__details">
+                <div class="course-card__header">
+                  <h3 class="course-card__title"><a href="#course2">UI/UX design</a></h3>
+                  <div class="course-card__rating">
+                    <img
+                      src="assets/icons/star.svg"
+                      alt="Rating star"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="course-card__rating-score">4.5</span>
+                  </div>
+                </div>
+                <p class="course-card__description">
+                  Get the best course, gain knowledge and shine for your future career.
+                </p>
+                <div class="course-card__footer">
+                  <span class="course-card__price">$120.75</span>
+                  <button class="btn btn--secondary course-card__btn">Book Now</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card">
+              <a
+                href="#course3"
+                class="course-card__link"
+              >
+                <img
+                  class="course-card__thumb"
+                  src="assets/images/course-03.jpg"
+                  alt="Web App design course"
+                  width="370"
+                  height="278"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="course-card__details">
+                <div class="course-card__header">
+                  <h3 class="course-card__title"><a href="#course3">Web App design</a></h3>
+                  <div class="course-card__rating">
+                    <img
+                      src="assets/icons/star.svg"
+                      alt="Rating star"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="course-card__rating-score">4.5</span>
+                  </div>
+                </div>
+                <p class="course-card__description">
+                  Get the best course, gain knowledge and shine for your future career.
+                </p>
+                <div class="course-card__footer">
+                  <span class="course-card__price">$120.75</span>
+                  <button class="btn btn--secondary course-card__btn">Book Now</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback Section -->
+      <section
+        id="reviews"
+        class="feedback"
+      >
+        <div class="container">
+          <div class="feedback__list">
+            <article class="feedback-card">
+              <div class="feedback-card__user">
+                <img
+                  src="assets/images/feedback-avatar-1.jpg"
+                  alt="Peter Moor, Web Design student"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  decoding="async"
+                  class="feedback-card__user-img"
+                />
+                <p class="feedback-card__name">Peter Moor</p>
+                <p class="feedback-card__job">Student of Web Design</p>
+                <div class="feedback-card__dots">
+                  <span class="feedback-card__dot feedback-card__dot--active"></span>
+                  <span class="feedback-card__dot"></span>
+                  <span class="feedback-card__dot"></span>
+                </div>
+              </div>
+              <div class="feedback-card__quote">
+                <img
+                  src="assets/icons/open-quotes.svg"
+                  alt="Quote"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <blockquote class="feedback-card__quote-text">
+                  Not only does my resume look impressive—filled with the names and logos of world-class
+                  institutions—but these certificates also bring me closer to my career goals by validating the skills
+                  I've learned.
+                </blockquote>
+              </div>
+            </article>
+
+            <!-- 2 feedback khác tương tự, chỉ đổi ảnh -->
+            <article class="feedback-card">
+              <div class="feedback-card__user">
+                <img
+                  src="assets/images/feedback-avatar-2.jpg"
+                  alt="Student feedback"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  decoding="async"
+                  class="feedback-card__user-img"
+                />
+                <p class="feedback-card__name">Anna Smith</p>
+                <p class="feedback-card__job">Student of UI/UX</p>
+                <div class="feedback-card__dots">
+                  <span class="feedback-card__dot"></span>
+                  <span class="feedback-card__dot feedback-card__dot--active"></span>
+                  <span class="feedback-card__dot"></span>
+                </div>
+              </div>
+              <div class="feedback-card__quote">
+                <img
+                  src="assets/icons/open-quotes.svg"
+                  alt="Quote"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <blockquote class="feedback-card__quote-text">
+                  The platform is easy to use and the certificates helped me land my first design internship.
+                </blockquote>
+              </div>
+            </article>
+
+            <article class="feedback-card">
+              <div class="feedback-card__user">
+                <img
+                  src="assets/images/feedback-avatar-3.jpg"
+                  alt="Student feedback"
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  decoding="async"
+                  class="feedback-card__user-img"
+                />
+                <p class="feedback-card__name">John Lee</p>
+                <p class="feedback-card__job">Student of Marketing</p>
+                <div class="feedback-card__dots">
+                  <span class="feedback-card__dot"></span>
+                  <span class="feedback-card__dot"></span>
+                  <span class="feedback-card__dot feedback-card__dot--active"></span>
+                </div>
+              </div>
+              <div class="feedback-card__quote">
+                <img
+                  src="assets/icons/open-quotes.svg"
+                  alt="Quote"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <blockquote class="feedback-card__quote-text">
+                  The lessons are structured well and gave me confidence to switch careers into digital marketing.
+                </blockquote>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section 1 -->
+      <section
+        id="features"
+        class="features features--first"
+      >
+        <div class="container">
+          <div class="features__body">
+            <div class="features__images">
+              <img
+                class="features__image"
+                src="assets/images/feature-01.jpg"
+                alt="Learner outcomes through our platform"
+                width="400"
+                height="300"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="features__image features__image--hiddendesktop"
+                src="assets/images/feature-02.jpg"
+                alt="Learner outcomes through our platform"
+                width="400"
+                height="300"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="features__content">
+              <h2 class="features__heading">Learner outcomes through our awesome platform</h2>
+              <p class="features__description">
+                87% of people learning for professional development report career benefits like getting a promotion, a
+                raise, or starting a new career.
+              </p>
+              <p class="features__description">Lesson Impact Report (2022)</p>
+              <a
+                href="#signup"
+                class="btn btn--secondary features__cta-btn"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section 2 -->
+      <section class="features features--second">
+        <div class="container">
+          <div class="features__body">
+            <div class="features__images">
+              <img
+                class="features__image--square"
+                src="assets/images/feature-02.jpg"
+                alt="Take the next step toward your goals"
+                width="400"
+                height="300"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="features__content">
+              <h2 class="features__heading">
+                Take the next step toward your personal and professional goals with Lesson.
+              </h2>
+              <p class="features__description">
+                Join now to receive personalized and more recommendations from the full Coursera catalog.
+              </p>
+              <a
+                href="#join"
+                class="btn btn--secondary features__cta-btn"
+                >Join Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section
+        id="blog"
+        class="blog"
+      >
+        <div class="container">
+          <div class="blog__top">
+            <h2 class="blog__heading">Our blog</h2>
+            <p class="blog__description">Read our regular travel blog and know the latest update of tour and travel</p>
+          </div>
+          <div class="blog__list">
+            <article class="blog-card">
+              <a
+                href="#blog1"
+                class="blog-card__link"
+              >
+                <img
+                  class="blog-card__thumb"
+                  src="assets/images/blog-01.jpg"
+                  alt="How to become a pro web designer in 2022"
+                  width="370"
+                  height="278"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="blog-card__info">
+                <time
+                  datetime="2021-11-21"
+                  class="blog-card__date"
+                  >21 November 2021</time
+                >
+                <h3 class="blog-card__title">
+                  <a href="#blog1">How to become a pro web designer in 2022 and get remote job?</a>
+                </h3>
+                <a
+                  href="#blog1"
+                  class="btn blog-card__btn"
+                  >Read More</a
+                >
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <a
+                href="#blog2"
+                class="blog-card__link"
+              >
+                <img
+                  class="blog-card__thumb"
+                  src="assets/images/blog-02.jpg"
+                  alt="UI/UX tips for designers"
+                  width="370"
+                  height="278"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="blog-card__info">
+                <time
+                  datetime="2021-11-21"
+                  class="blog-card__date"
+                  >21 November 2021</time
+                >
+                <h3 class="blog-card__title">
+                  <a href="#blog2">UI/UX tips for designers to get remote jobs faster</a>
+                </h3>
+                <a
+                  href="#blog2"
+                  class="btn blog-card__btn"
+                  >Read More</a
+                >
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <a
+                href="#blog3"
+                class="blog-card__link"
+              >
+                <img
+                  class="blog-card__thumb"
+                  src="assets/images/blog-03.jpg"
+                  alt="Steps to become a web app designer"
+                  width="370"
+                  height="250"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="blog-card__info">
+                <time
+                  datetime="2021-11-21"
+                  class="blog-card__date"
+                  >21 November 2021</time
+                >
+                <h3 class="blog-card__title">
+                  <a href="#blog3">Steps to become a web app designer and work remotely</a>
+                </h3>
+                <a
+                  href="#blog3"
+                  class="btn blog-card__btn"
+                  >Read More</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="blog__dots">
+            <span class="blog__dot"></span>
+            <span class="blog__dot blog__dot--active"></span>
+            <span class="blog__dot"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__row">
+          <div class="site-footer__column">
+            <img
+              src="assets/icons/logo-white.svg"
+              alt="Lesson logo"
+              width="120"
+              height="40"
+              decoding="async"
+            />
+            <p class="site-footer__description">
+              Need to help for your dream Career? trust us. With Lesson, study becomes a lot easier with us.
+            </p>
+            <div
+              class="site-footer__socials"
+              role="navigation"
+              aria-label="Social media links"
+            >
+              <a
+                href="#twitter"
+                class="site-footer__social-link"
+                aria-label="Twitter"
+              >
+                <img
+                  class="site-footer__social-icon"
+                  src="assets/icons/twitter.svg"
+                  alt="Twitter"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <a
+                href="#facebook"
+                class="site-footer__social-link"
+                aria-label="Facebook"
+              >
+                <img
+                  class="site-footer__social-icon"
+                  src="assets/icons/facebook.svg"
+                  alt="Facebook"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <a
+                href="#linkedin"
+                class="site-footer__social-link"
+                aria-label="LinkedIn"
+              >
+                <img
+                  class="site-footer__social-icon"
+                  src="assets/icons/linkedin.svg"
+                  alt="LinkedIn"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <a
+                href="#instagram"
+                class="site-footer__social-link"
+                aria-label="Instagram"
+              >
+                <img
+                  class="site-footer__social-icon"
+                  src="assets/icons/instagram.svg"
+                  alt="Instagram"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="site-footer__column">
+            <h3 class="site-footer__title">Company</h3>
+            <ul class="site-footer__list">
+              <li>
+                <a
+                  href="#about"
+                  class="site-footer__link"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#features"
+                  class="site-footer__link"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  class="site-footer__link"
+                  >Our Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#news"
+                  class="site-footer__link"
+                  >Latest News</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="site-footer__column">
+            <h3 class="site-footer__title">Support</h3>
+            <ul class="site-footer__list">
+              <li>
+                <a
+                  href="#faq"
+                  class="site-footer__link"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#terms"
+                  class="site-footer__link"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#privacy"
+                  class="site-footer__link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="site-footer__link"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="site-footer__column">
+            <h3 class="site-footer__title">Address</h3>
+            <ul class="site-footer__list">
+              <li>
+                <strong>Location:</strong>
+                <a
+                  href="#!"
+                  class="site-footer__link"
+                  >27 Division St, New York, NY 10002, USA</a
+                >
+              </li>
+              <li>
+                <strong>Email:</strong>
+                <a
+                  href="mailto:email@gmail.com"
+                  class="site-footer__link"
+                  >email@gmail.com</a
+                >
+              </li>
+              <li>
+                <strong>Phone:</strong>
+                <a
+                  href="tel:+0001234567890"
+                  class="site-footer__link"
+                  >+000 1234 567 890</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__copyright">
+          <p class="site-footer__copyright-text">&copy; 2022 webdesign.gdn. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

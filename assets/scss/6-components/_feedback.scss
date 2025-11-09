@@ -1,0 +1,96 @@
+@use '../1-settings/' as settings;
+@use '../2-tools/' as tools;
+
+.feedback {
+  background-color: settings.$color-bg-secondary;
+
+  &__list {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &-card {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding-block: 6rem;
+    inline-size: 100%;
+
+    &__user {
+      min-inline-size: 27%;
+    }
+
+    &__user-img {
+      inline-size: 4.5rem;
+      block-size: 4.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &__name {
+      margin-block-start: 1.13rem;
+      font-family: Sen;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.41667;
+      color: #f7f7f7;
+    }
+
+    &__job {
+      margin-block-start: 0.25rem;
+      color: #bfbcb2;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.85714;
+    }
+
+    &__dots {
+      margin-block-start: 1.75rem;
+      display: flex;
+      gap: 0.38rem;
+    }
+
+    &__dot {
+      inline-size: 0.375rem;
+      block-size: 0.375rem;
+      border-radius: 50%;
+      background-color: #634700;
+
+      &--active {
+        background-color: #ffb900;
+      }
+    }
+
+    &__quote {
+      max-inline-size: 58%;
+
+      &-text {
+        padding-inline-start: 1.875rem;
+        font-size: 1.625rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.53846;
+        color: #fff;
+      }
+    }
+  }
+
+  @include tools.respond-max(tablet) {
+    &-card {
+      flex-direction: column;
+
+      &__user {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-inline: auto;
+      }
+
+      &__quote {
+        margin-inline: auto;
+      }
+    }
+  }
+}

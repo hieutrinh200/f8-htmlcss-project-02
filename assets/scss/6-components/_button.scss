@@ -1,0 +1,44 @@
+@use '../1-settings' as settings;
+@use '../2-tools' as *;
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 999px;
+  background-color: black;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.1s ease;
+
+  &:hover {
+    background-color: color-mix(in srgb, black 88%, white);
+  }
+
+  &:active {
+    background-color: color-mix(in srgb, black 88%, white);
+    transform: scale(0.98);
+  }
+
+  &:focus-visible {
+    @include focus-ring();
+  }
+
+  &--secondary {
+    color: #fff;
+    background-color: settings.$color-bg-button;
+
+    &:hover {
+      background-color: color-mix(in srgb, settings.$color-bg-button 92%, black);
+    }
+
+    &:active {
+      background-color: color-mix(in srgb, settings.$color-bg-button 88%, black);
+      transform: scale(0.98);
+    }
+  }
+}

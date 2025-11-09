@@ -1,0 +1,160 @@
+@use '../1-settings/' as settings;
+@use '../2-tools/' as tools;
+
+.popular {
+  margin-block-start: 12.5rem;
+  margin-block-end: 12.5rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: Sen;
+    font-size: 2.375rem;
+    font-weight: 700;
+    line-height: 1.26316;
+    letter-spacing: -0.0475rem;
+    color: settings.$color-text-primary;
+  }
+
+  &__description {
+    max-inline-size: 28.625rem;
+    margin-block-start: 1rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.66667;
+    color: settings.$color-text-secondary;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 1.13rem;
+  }
+
+  &__control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    color: #ffb900;
+    border-radius: 50%;
+    border: 1px solid #ffb900;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: #ffb900;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.88rem;
+    margin-block-start: 3.44rem;
+  }
+
+  @include tools.respond-max(desktop) {
+    &__list {
+      justify-content: space-evenly;
+    }
+  }
+
+  @include tools.respond-max(tablet) {
+    &__content {
+      flex-direction: column;
+      gap: 3rem;
+      text-align: center;
+    }
+  }
+}
+
+.course-card {
+  inline-size: 23.125rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2dfda;
+  background-color: #fff;
+
+  &__thumb {
+    inline-size: 23.125rem;
+    block-size: 17.375rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+    object-fit: cover;
+  }
+
+  &__details {
+    padding-block: 1rem 2rem;
+    padding-inline: 1.37rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.66667;
+    color: settings.$color-text-primary;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 0.38rem;
+
+    &-score {
+      color: #fea31b;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.75;
+    }
+  }
+
+  &__description {
+    margin-block-start: 0.38rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.85714;
+    color: settings.$color-text-secondary;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-start: 1.38rem;
+  }
+
+  &__price {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.66667;
+    color: settings.$color-text-primary;
+  }
+
+  &__btn {
+    padding-block: 0.75rem;
+    padding-inline: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.85714;
+  }
+
+  @include tools.respond-max(tablet) {
+    inline-size: 80%;
+
+    &__thumb {
+      inline-size: 100%;
+    }
+  }
+}
